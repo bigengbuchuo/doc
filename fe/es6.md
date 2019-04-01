@@ -16,7 +16,7 @@
 
 let、const只能声明一次，var可以多次声明。
 
-```
+```JavaScript
 var a;
 var a;
 // 正常

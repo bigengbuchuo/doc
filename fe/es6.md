@@ -49,7 +49,7 @@ const d;
 
    const声明引用类型，限制的是const声明的变量对于对象类型的指向关系，所以之后都不能改变变量的指向关系；但是并没有限定对象类型本身，所以对象类型里的内容是可以改变的。
 
-```
+```JavaScript
 const obj = {a: 1}
 
 obj.b = 2;   //成功添加
@@ -95,7 +95,7 @@ const 是只有声明和初始化，没有赋值操作，所以不可变。
 
 - var  是只有一个块级作用域。
 
-```
+```JavaScript
 for(var i=0;i<10;i++){
 	...
 }
@@ -108,7 +108,7 @@ console.log(i);  //10
 
 - let/const  每次循环都会声明一次（对比var声明的for循环只会声明一次），每次都会创建一个块级作用域，还会在每次重新创建的的每个块级作用域中重新赋值。
 
-```
+```JavaScript
 for(let i=0;i<10;i++){
 	...
 }
@@ -117,7 +117,7 @@ console.log(i);  //Uncaught ReferenceError: i is not defined
 
 let/const  每次循环的内部：
 
-```
+```JavaScript
 {
     let i=0;
     ...
@@ -177,7 +177,7 @@ tip：for in循环in之前的变量（本题中是key）表示：
 
 而`let、const`在全局声明时则不会替换掉`window`上的属性。
 
-```
+```JavaScript
 var a=0;
 console.log(window.a); //0
 
@@ -229,7 +229,7 @@ console.log(window.b); //undefined
 
 原题：
 
-```
+```JavaScript
 var value = "global";
 
 // 例子1
@@ -259,7 +259,7 @@ var value = "global";
 验证：
 
 1.
-```
+```JavaScript
 var value = "global";
 
 (function() {
@@ -278,7 +278,7 @@ undefined  返回值
 而整个过程并没有返回值，所以是undefined。
 
 2.
-```
+```JavaScript
 var value = "global";
 
 (function() {

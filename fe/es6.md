@@ -187,7 +187,7 @@ console.log(window.b); //undefined
 
 这个其实也是let/const的特点，ES6规定它们不属于顶层全局变量的属性.
 
-![let、const在全局中的存储位置](E:\doc\fe\pic\window.png)
+![let、const在全局中的存储位置](https://github.com/bigengbuchuo/doc/blob/master/fe/pic/window.png)
 
 可以看到使用let声明的变量s是在一个叫script作用域下的，
 

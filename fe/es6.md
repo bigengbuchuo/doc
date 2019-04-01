@@ -137,7 +137,7 @@ let/const  每次循环的内部：
 
 for in 循环很简单，在这里简单提一下：
 
-```
+```JavaScript
 var funcs = [], object = {a: 1, b: 1, c: 1};
 for (var key in object) {
     funcs.push(function(){
